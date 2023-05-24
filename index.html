@@ -2,11 +2,25 @@
 
 <head>
     <meta charset="UTF-8">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> 🔧⚙️ U.M ⛓️🛠️ - Site under construction</title>
     <style>
         html{
             background-color: #563761 ;
+        }
+
+        #game-icon1{
+            display: block;
+            float: left;
+            width: 400px;
+            z-index: -10;
+        }
+
+        #game-icon2{
+            display: block;
+            float: right;
+            width: 400px;
+            z-index: -10;
         }
 
         .maincontainer{
@@ -14,21 +28,17 @@
             flex-wrap:wrap;
             flex-direction:column;
             align-items: center;
-            
         }
 
         .introsection{
             display: block;
-        }
-
-        #page-title{
-            font-family: sans-serif;
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
 
         .midsection{
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             color: beige;
-        
         }
 
         .quotesection{
@@ -42,14 +52,50 @@
         .experience-section{
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
+
+        .poem-section{
+            position: relative;
+            font-family:   'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: center;
+                 
+        }
+        #container-border{
+            position:absolute;
+            z-index: -11;
+            width: 600px;
+            height:600px;
+            left:520px;
+            bottom:-170px;
+        }
+
+        .poem-section h4,p{
+            font-style: italic;
+            align-self: center;
+        }
+
+        @media (max-width:380) {
+            #container-border{
+            position:absolute;
+            z-index: -11;
+            width: 600px;
+            height:600px;
+            left:0px;
+            bottom:-170px;
+        }
+        }
+
+        
         
     </style>
 </head>
 
 <body>
+    <img id="game-icon1" src="./images/Kali-linux-left.png">
+    <img id="game-icon2" src="./images/Kali-linux-right.png">
     <div class="maincontainer">
         <div class="introsection">
             <h1 id="page-title">First Ever Site of 🔧⚙️ U.M ⛓️🛠️</h1>
+            <p id="thanks-message">Thanks for visiting my first ever page. <br>When I was looking for ideas, I got the inspiration to make my own portfolio, rather than a random page.</p>
         </div>
         <div class="midsection">
             <table id="midsection-table" cellspacing="10">
@@ -83,7 +129,7 @@
         </div>
         <div class="experience-section">
             <h3>Work Experience</h3>
-            <table border="1" align="center" cellspacing="5" style="background-color: azure;">
+            <table cellspacing="5" style="background-color: azure;">
                 <thead>
                     <tr>
                         <th>Duration</th>
@@ -149,18 +195,11 @@
                 </tfoot>
             </table>
         </div>
-    </div>
- 
-  
-    <a style="color:forestgreen; font-family: sans-serif;" href="hobbies.html">My Hobbies</a>
-    <a style="color:green; font-family: sans-serif;" href="contact.html">Contact me</a>
-    <hr>
-    
-    
-    <hr>
-    <div><center>
-    <h4>Unique Mechanic's Favorite Poem</h4>
-    <p>All that is gold does not glitter,<br>
+    </div> 
+    <div class="poem-section">
+        <img id="container-border" src="./images/container.png">
+        <h4>Unique Mechanic's Favorite Poem</h4>
+        <p>All that is gold does not glitter,<br>
         Not all those who wander are lost;<br>
         The old that is strong does not wither,<br>
         Deep roots are not reached by the frost.<br>
@@ -170,13 +209,15 @@
         Renewed shall be blade that was broken,<br>
         The crownless again shall be king.<br>
         <br>
-        — J.R.R. Tolkien, The Fellowship of the Ring</p></center>
+        — J.R.R. Tolkien, The Fellowship of the Ring</p>
     </div>
     <h4>Here is a sample work of UM's hobby:</h4>
     <div>
         <img src="./images/Your projects.jpg" height="400px"/>
     </div>
 
+    <a href="hobbies.html">My Hobbies</a>
+    <a href="contact.html">Contact me</a>
    
 
 </body>
