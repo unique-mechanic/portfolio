@@ -23,7 +23,7 @@
             z-index: -10;
         }
 
-        .maincontainer{
+        .main-container{
             display: flex;
             flex-wrap:wrap;
             flex-direction:column;
@@ -70,6 +70,15 @@
             top:-400px;
         }
 
+        .second-container{
+            display: flex;
+            flex-direction: row;
+        }
+
+        .second-container img{
+            width: 800px;
+        }
+
         @media (max-width:380) {
             #container-border{
             position:absolute;
@@ -81,15 +90,13 @@
         }
         }
 
-        
-        
     </style>
 </head>
 
 <body>
     <img id="game-icon1" src="./images/Kali-linux-left.png">
     <img id="game-icon2" src="./images/Kali-linux-right.png">
-    <div class="maincontainer">
+    <div class="main-container">
         <div class="introsection">
             <h1 id="page-title">First Ever Site of 🔧⚙️ U.M ⛓️🛠️</h1>
             <p id="thanks-message">Thanks for visiting my first ever page. <br>When I was looking for ideas, I got the inspiration to make my own portfolio, rather than a random page.</p>
@@ -208,13 +215,15 @@
             — J.R.R. Tolkien, The Fellowship of the Ring</p>
         </div>
     </div> 
-   
-    <h4>Here is a sample work of UM's hobby:</h4>
-    <div>
-        <img src="./images/Your projects.jpg" height="400px"/>
+    <div class="second-container">
+        <div class="contact-card">
+            <img src="./images/dots.png">
+        </div>
+        <div class="github-container">
+            <h4>Here is a sample work of UM's hobby:</h4>
+            <img src="./images/polygons.png" >
+        </div>
     </div>
-    <div></div>
-    
     <a href="hobbies.html">My Hobbies</a>
     <a href="contact.html">Contact me</a>
    
