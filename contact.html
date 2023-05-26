@@ -5,13 +5,16 @@
     <title>Contact Details</title>
     <style>
         .Left-Navigation{
+            background-color: black;
             border: 1px solid black;
-            display: flex;
+            display: inline-flex;
             flex-direction: column;
             float: left;
+            align-items: center;
         }
         .profile-pic img{
             width:100px;
+            background-color: white;
         }
         .nav-icons img{
             display: inline;
@@ -25,9 +28,57 @@
         }
 
         .contact-details{
-            display: none;
+            float: right;
+            display: block;
         }
-        
+
+        .navigation-bar{
+            background-color: aqua;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            border: 1px solid;
+        }
+
+        ul{
+            list-style-type: none;
+        }
+        li{
+            margin: 20px; 
+        }
+
+        .button {
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+
+        .visible-button {
+            background-color: white; 
+            color: black; 
+            border: 2px solid #4CAF50;
+        }
+
+        .visible-button:hover {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .hide-button {
+            background-color: white; 
+            color: black; 
+            border: 2px solid #008CBA;
+        }
+
+        .hide-button:hover {
+            background-color: #008CBA;
+            color: white;
+        }
         
     </style>
 </head>
@@ -48,12 +99,11 @@
             </div>
             <div class="navigation-bar">
                 <ul>
-                    <li>Home</li>
+                    <li style="color:black"><a href="">Home</a></i></li>
                     <li>About</li>
                     <li>Resume</li>
                     <li>Portfolio</li>
                 </ul>
-
             </div>
 
         </div>
@@ -62,13 +112,15 @@
         
 
     </div>
-    <div class="contact-details">
+    <div class="contact-details" id="contact">
         <h3>Contact Details of UM</h3>
         <ol>
-            <li>Email address: ********mechanic@gmail.com</li>
+            <li id="email-address">Email address: ********mechanic@gmail.com</li>
+            <button class= "visible-button" type="button" onclick = "document.getElementById('email-address').innerHTML= 'Email address: uniquepromechanic@gmail.com' ">Make it visible</button>
             <li>Mobile Phone number:  </li>
             <li>Residential Address: Earth</li>
         </ol>
+        <button class="hide-button" type="button" onclick = "document.getElementById('contact').style.display='none' ">Hide this section</button>
     </div>
     
 
