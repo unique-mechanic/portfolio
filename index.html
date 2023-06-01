@@ -6,7 +6,21 @@
     <title> 🔧⚙️ U.M ⛓️🛠️ - Site under construction</title>
     <style>
         html{
-            background-color: #563761 ;
+            background-color: #F9FBE7 ;
+        }
+        
+        .demo-wrap {
+            overflow: hidden;
+            position: relative;
+        }
+
+        .demo-bg {
+            opacity: 1;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
         }
 
         #game-icon1{
@@ -38,7 +52,6 @@
 
         .midsection{
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            color: beige;
         }
 
         .quotesection{
@@ -79,21 +92,80 @@
             width: 800px;
         }
 
-        @media (max-width:380) {
-            #container-border{
-            position:absolute;
-            z-index: -11;
-            width: 600px;
-            height:600px;
-            left:0px;
-            bottom:-170px;
+        table{
+            font-family:   'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: center;
         }
+        h3{
+            text-align: left;
+        }
+        
+        @media (max-width:1400px) {
+
+            html{
+                font-size: large;
+            }
+
+            .main-container{
+                font-size: 0.5em;
+                position: relative;
+                left: 0px;
+            }
+
+            #game-icon1{
+            display: block;
+            float: left;
+            width: 50px;
+            z-index: 1;
+            }
+
+            #game-icon2{
+            display: block;
+            float: right;
+            width: 50px;
+            z-index: 1;
+            }
+
+            table{
+                font-size: 1em;
+            }
+
+            #logo{
+                height: 50px;
+                width: 50px;
+            }
+
+            #logo-section{
+                background-color: black;
+                border-radius: 10%;
+            }
+
+            #container-border{
+                position: relative;
+                width: 350px;
+                height: 350px;
+                top: -90px;
+            }
+            .poem-section{
+                position: relative;
+                font-style: italic;
+                align-self: center;
+                top:-335px;
+            }
+            
         }
 
     </style>
 </head>
 
 <body>
+    <div class="demo-wrap">
+        <img
+          class="demo-bg"
+          src="./images/dots.png"
+          alt=""
+        >
+      </div>
     <img id="game-icon1" src="./images/Kali-linux-left.png">
     <img id="game-icon2" src="./images/Kali-linux-right.png">
     <div class="main-container">
@@ -104,7 +176,7 @@
         <div class="midsection">
             <table id="midsection-table" cellspacing="10">
                 <tr>
-                    <td><img src="./images/mechanic-logo.jpg" height="200px"  alt="UniqueMechanic"></td>
+                    <td id="logo-section"><img id="logo" src="./images/mechanic-logo.jpg" height="200px"  alt="UniqueMechanic"></td>
                     <td>
                         <table>
                             <tr><td>A budding coder; Fav quote: <em>Keep it simple</em></td></tr>
@@ -214,16 +286,9 @@
             <br>
             — J.R.R. Tolkien, The Fellowship of the Ring</p>
         </div>
-    </div> 
-    <div class="second-container">
-        <div class="contact-card">
-            <img src="./images/dots.png">
-        </div>
-        <div class="github-container">
-            <h4>Here is a sample work of UM's hobby:</h4>
-            <img src="./images/polygons.png" >
-        </div>
     </div>
+     
+   
     <a href="hobbies.html">My Hobbies</a>
     <a href="contact.html">Contact me</a>
    
