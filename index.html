@@ -6,7 +6,7 @@
     <title> 🔧⚙️ U.M ⛓️🛠️ - Site under construction</title>
     <style>
         html{
-            background-color: #F9FBE7 ;
+            background-color: black ;
         }
         
         .demo-wrap {
@@ -43,6 +43,8 @@
             flex-direction:column;
             align-items:center;
             justify-content: center;
+            background-color: blueviolet;
+            border-radius: 5%;
         }
 
         .introsection{
@@ -64,14 +66,27 @@
         .education-section{
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
+        .education-section h3{
+            text-align: center;
+        }
+
         .experience-section{
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             position: relative;
+        }
+        
+        #experience-table{
+            position: relative;
+            text-align: center;
         }
 
         .skills-section{
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             position: relative;
+            
+        }
+        .skills-section h3{
+            text-align: center;
         }
 
         .poem-section{
@@ -212,7 +227,9 @@
         </div>
         <div class="experience-section">
             <h3>Work Experience</h3>
-            <table cellspacing="5" style="background-color: azure;">
+        </div>
+        <div>
+            <table id="experience-table" cellspacing="5" >
                 <thead>
                     <tr>
                         <th>Duration</th>
