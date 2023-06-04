@@ -13,6 +13,23 @@
         <li>Sleep</li>
         <li>Repeat</li>
     </ul>
-    <img src="./images/hobbies.jpg" style="height: 400px;"/>    
+    <img src="./images/hobbies.jpg" style="height: 400px;"/>
+    <div class="calculator-container">
+        <form>
+        <input type="text" id="number1">
+        <input type="text" id="number2">
+        <button type="button" onclick="submit1()">Add</button>
+        <div id="screen1"></div>
+        </form>
+    </div>
+    <script type="text/javascript">
+        function submit1(){
+         var a = document.getElementById("number1").value;
+              var b = document.getElementById("number2").value;
+                var c = parseInt(a) + parseInt(b); 
+            document.getElementById("screen1").innerHTML=c;
+        }
+    </script>
+
 </body>
 </html>
