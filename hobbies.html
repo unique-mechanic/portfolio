@@ -3,6 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <title>My Hobbies</title>
+    <script src="./script.js"></script>
+    <style>
+        html{
+            font-family: sans-serif;
+        }
+        .calculator-container{
+            background-color: aqua;
+            width: 200px;
+        }
+        .contact-form{
+
+        }
+        ul{
+            list-style-type: none;
+            font-family: sans-serif;
+        }
+
+    </style>
 </head>
 <body style="font-family: sans-serif;">
     <h1>Hobbies</h1>
@@ -15,20 +33,34 @@
     </ul>
     <img src="./images/hobbies.jpg" style="height: 400px;"/>
     <div class="calculator-container">
-        <form>
-        <input type="text" id="number1">
-        <input type="text" id="number2">
-        <button type="button" onclick="submit1()">Add</button>
+        <form id='additionform'>
+        <input type="text" id="number1" placeholder="Enter any number">
+        <br>
+        <br>
+        <input type="text" id="number2" placeholder="Enter any number">
+        <button type="button" onclick="addTwoNumbers()">Add</button>
+        <br>
+        <br>
         <div id="screen1"></div>
         </form>
     </div>
+    <div class="contact-form">
+        <form>
+            <h4>Contact us</h4>
+            <ul>
+                <li>First Name*   <input type="text" id="first-namefield" placeholder="Enter your first name"></li>
+                <li>Last Name*   <input type="text" id="last-namefield" placeholder="Enter your last name"></li>
+                <li>Password     <input type="password" id="namefield" placeholder="Enter password"></li>
+                <li>Range <input type="range" id="rangefield"></li>
+                <li>Pick a color <input type="color" id="colorfield"></li>
+            </ul>
+            
+            Last Name  
+            
+        </form>
+    </div>
     <script type="text/javascript">
-        function submit1(){
-         var a = document.getElementById("number1").value;
-              var b = document.getElementById("number2").value;
-                var c = parseInt(a) + parseInt(b); 
-            document.getElementById("screen1").innerHTML=c;
-        }
+      
     </script>
 
 </body>
