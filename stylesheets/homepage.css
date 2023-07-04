@@ -1,0 +1,182 @@
+html{
+    background-color: black ;
+}
+
+.demo-wrap {
+    overflow: hidden;
+    position: relative;
+}
+
+.demo-bg {
+    opacity: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#game-icon1{
+    display: block;
+    float: left;
+    width: 400px;
+    z-index: -10;
+}
+
+#game-icon2{
+    display: block;
+    float: right;
+    width: 400px;
+    z-index: -10;
+}
+
+.main-container{
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction:column;
+    align-items:center;
+    justify-content: center;
+    background-color: blueviolet;
+    border-radius: 5%;
+}
+
+.introsection{
+    display: block;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.midsection{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+.quotesection{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+.education-section{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.education-section h3{
+    text-align: center;
+}
+
+.experience-section{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+}
+
+#experience-table{
+    position: relative;
+    text-align: center;
+}
+
+.skills-section{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+    
+}
+.skills-section h3{
+    text-align: center;
+}
+
+.poem-section{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;   
+}
+
+#container-border{
+    width: 500px;
+    height: 500px;
+}
+
+.poem-section{
+    position: relative;
+    font-style: italic;
+    align-self: center;
+    top:-400px;
+}
+
+.second-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.second-container img{
+    width: 800px;
+}
+
+table{
+    align-content: center;
+    font-family:   'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+}
+
+.portfolio-section{
+    position: relative;
+    top: -380px;
+}
+
+@media (max-width:1400px) {
+
+    html{
+        font-size: large;
+    }
+
+    .main-container{
+        font-size: 0.5em;
+    }
+
+    #game-icon1{
+    display: block;
+    float: left;
+    width: 30px;
+    z-index: 1;
+    }
+
+    #game-icon2{
+    display: block;
+    float: right;
+    width: 30px;
+    z-index: 1;
+    }
+
+    table{
+        font-size: 1em;
+    }
+
+    #logo{
+        height: 50px;
+        width: 50px;
+    }
+
+    #logo-section{
+        background-color: black;
+        border-radius: 10%;
+    }
+
+    #container-border{
+        position: relative;
+        width: 350px;
+        height: 350px;
+        top: -90px;
+    }
+    .poem-section{
+        position: relative;
+        font-style: italic;
+        align-self: center;
+        top:-335px;
+    }
+
+    .portfolio-section{
+        position: relative;
+        top: -315px;
+    }
+    
+}
