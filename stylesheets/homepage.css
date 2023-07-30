@@ -123,6 +123,11 @@ h3{
     top: -380px;
 }
 
+.setup-section{
+    position: relative;
+    top: -380px;
+}
+
 @media (max-width:1400px) {
 
     html{
