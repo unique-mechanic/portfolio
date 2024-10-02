@@ -1,200 +1,139 @@
-<!DOCTYPE html style="background: blue">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> 🔧⚙️ U.M ⛓️🛠️ - Site under construction</title>
+    <title>🔧⚙️ U.M ⛓️🛠️ - Site under construction</title>
     <script src="./scripts/script.js"></script>
-    <link href="./stylesheets/homepage.css" rel="stylesheet" type="text/css" />
-    
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
+<body class="bg-gray-100">
 
-<body>
-    <div class="demo-wrap">
-        <img
-          class="demo-bg"
-          src="./images/dots.png"
-          alt=""
-        >
-      </div>
-    <img id="game-icon1" src="./images/Kali-linux-left.png">
-    <img id="game-icon2" src="./images/Kali-linux-right.png">
-    <div class="main-container">
-        <div class="introsection">
-            <h1 id="page-title">First Ever Site of 🔧⚙️ U.M ⛓️🛠️</h1>
-            <p id="thanks-message">Thanks for visiting my first ever page. <br>When I was looking for ideas, I got the inspiration to make my own portfolio, rather than a random page.</p>
+    <!-- Background image -->
+    <div class="relative">
+        <img class="absolute inset-0 w-full h-full object-cover opacity-20" src="./images/dots.png" alt="Background">
+    </div>
+
+    <!-- Icons Section -->
+    <div class="flex justify-between p-4">
+        <img id="game-icon1" src="./images/Kali-linux-left.png" alt="Kali Linux Left" class="h-16">
+        <img id="game-icon2" src="./images/Kali-linux-right.png" alt="Kali Linux Right" class="h-16">
+    </div>
+
+    <!-- Main Section -->
+    <div class="container mx-auto p-6">
+        <!-- Intro Section -->
+        <div class="text-center bg-white shadow-lg rounded-lg p-8">
+            <h1 id="page-title" class="text-4xl font-bold text-blue-600">First Ever Site of 🔧⚙️ U.M ⛓️🛠️</h1>
+            <p id="thanks-message" class="mt-4 text-gray-700">Thanks for visiting my first ever page.<br>When I was looking for ideas, I got the inspiration to make my own portfolio, rather than a random page.</p>
         </div>
-        <div class="midsection">
-            <table id="midsection-table" cellspacing="10">
-                <tr>
-                    <td id="logo-section"><img id="logo" src="./images/mechanic-logo.jpg" height="200px"  alt="UniqueMechanic"></td>
-                    <td>
-                        <table>
-                            <tr><td>A budding coder; Fav quote: <em>Keep it simple</em></td></tr>
-                            <tr><td>நான் நினைத்ததை முடிப்பவன்✡️</td></tr>
-                            <tr><td>Keep It ( 💻the code🧑‍💻) <a href="https://www.instagram.com/unique_mechanic/">Simple</a>, Stupid!</td></tr>
-                            <tr><td>Obsessed with Machines ⚙️ and Tech 🖥️</td></tr>
-                        </table>
-                    </td>
-                </tr>
-            </table>
+
+        <!-- Middle Section -->
+        <div class="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="flex justify-center">
+                <img id="logo" src="./images/mechanic-logo.jpg" alt="Unique Mechanic Logo" class="h-52">
+            </div>
+            <div class="bg-white shadow-lg rounded-lg p-6">
+                <p class="text-lg"><em>A budding coder; Fav quote: <strong>Keep it simple</strong></em></p>
+                <p>நான் நினைத்ததை முடிப்பவன்✡️</p>
+                <p>Keep It ( 💻the code🧑‍💻) <a href="https://www.instagram.com/unique_mechanic/" class="text-blue-500">Simple</a>, Stupid!</p>
+                <p>Obsessed with Machines ⚙️ and Tech 🖥️</p>
+            </div>
         </div>
-        <div class="quotesection">
-            <p>Favorite quote:</p>
-            <p><em>When life gives me lemons, I'll make chocolate cake and leave the bitches 
-                wondering how I did it</em>
-            </p>
+
+        <!-- Quote Section -->
+        <div class="mt-10 bg-white shadow-lg rounded-lg p-6">
+            <p class="text-xl font-bold">Favorite quote:</p>
+            <p class="italic mt-4 text-gray-600">When life gives me lemons, I'll make chocolate cake and leave the bitches wondering how I did it.</p>
         </div>
-        <div class="education-section">
-            <h3>Education</h3>
-            <ul>
+
+        <!-- Education Section -->
+        <div class="mt-10 bg-white shadow-lg rounded-lg p-6">
+            <h3 class="text-2xl font-bold">Education</h3>
+            <ul class="mt-4 list-disc pl-5 text-gray-700">
                 <li>Graduate Diploma in IT in USYD</li>
                 <li>Graduate Diploma in Computing in USYD</li>
                 <li>B.Tech in Mechanical Engineering in Christ College of Engineering and Technology, Puducherry</li>
                 <li>St.Patrick Matric Higher Secondary School, Puducherry</li>
             </ul>
         </div>
-        <div class="experience-section">
-            <h3>Work Experience</h3>
-        </div>
-        <div>
-            <table id="experience-table" cellspacing="5" >
+
+        <!-- Work Experience Section -->
+        <div class="mt-10 bg-white shadow-lg rounded-lg p-6">
+            <h3 class="text-2xl font-bold">Work Experience</h3>
+            <table class="w-full mt-4 table-auto text-left text-gray-700">
                 <thead>
-                    <tr>
-                        <th>Duration</th>
-                        <th>Designation</th>
+                    <tr class="bg-gray-200">
+                        <th class="px-4 py-2">Duration</th>
+                        <th class="px-4 py-2">Designation</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>2022-Present</td>
-                        <td>National IT  & Software Support</td>
+                        <td class="border px-4 py-2">2022-Present</td>
+                        <td class="border px-4 py-2">National IT &amp; Software Support</td>
                     </tr>
                     <tr>
-                        <td>2021-2022</td>
-                        <td>Recruitment Consultant</td>
+                        <td class="border px-4 py-2">2021-2022</td>
+                        <td class="border px-4 py-2">Recruitment Consultant</td>
                     </tr>
                     <tr>
-                        <td>2019-2021</td>
-                        <td>Customer Service Team Lead</td>
+                        <td class="border px-4 py-2">2019-2021</td>
+                        <td class="border px-4 py-2">Customer Service Team Lead</td>
                     </tr>
                     <tr>
-                        <td>2016-2017</td>
-                        <td>Software Tester</td>
+                        <td class="border px-4 py-2">2016-2017</td>
+                        <td class="border px-4 py-2">Software Tester</td>
                     </tr>
                 </tbody>
-                <tfoot></tfoot>
             </table>
         </div>
-        <div class="skills-section">
-            <h3>Skills</h3>
-            <table cellspacing="3">
-                <thead>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            <table>
-                                <tr>
-                                    <td>Web Development</td>
-                                    <td>⭐⭐⭐⭐</td>
-                                </tr>
-                                <tr>
-                                    <td>Photography</td>
-                                    <td>⭐⭐⭐</td>
-                                </tr>
-                            </table>
-            
-                        </td>
-                        <td>
-                            <table>
-                                <tr>
-                                    <td>Cooking</td>
-                                    <td>⭐⭐⭐</td>
-                                </tr>
-                                <tr>
-                                    <td>Fixing Tickets</td>
-                                    <td>⭐⭐⭐⭐</td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>      
-                </tbody>
-                <tfoot>
-                </tfoot>
-            </table>
-        </div>
-        <div><img id="container-border" src="./images/container.png"></div>
-        <div class="poem-section">
-            <h4>Unique Mechanic's Favorite Poem</h4>
-            <p>All that is gold does not glitter,<br>
-            Not all those who wander are lost;<br>
-            The old that is strong does not wither,<br>
-            Deep roots are not reached by the frost.<br>
-            <br>
-            From the ashes a fire shall be woken,<br>
-            A light from the shadows shall spring;<br>
-            Renewed shall be blade that was broken,<br>
-            The crownless again shall be king.<br>
-            <br>
-            — J.R.R. Tolkien, The Fellowship of the Ring</p>
-        </div>
-        <div class = "portfolio-section">
-            <h3>Projects</h3>
-            <table>
-                <tr>
-                    <td>
-                        Project Zardian
-                    </td>
-                    <td>
-                        Sample Work
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Sample Contact Book
-                    </td>
-                    <td>
-                        Sample Work
-                    </td>
-                </tr>
-            </table>
-        </div>
-        <div class="setup-section">
-            <h3>
-                Setup
-            </h3>
-            <div class="setup-image-section">
-                <ul>
-                    <li class="image-box">
-                      <div>
-                      <p>"Buggy - $20,000 USD"</p>
-                      <img src="https://mimo.app/i/bluebuggy.png" width="200" height="150">
-                      </div>
-                    </li>
-                    <li class="image-box">
-                      <div>
-                      <p>"Mustang - $25,000 USD"</p>
-                      <img src="https://mimo.app/i/mustang.png" width="200" height="150">
-                      </div>
-                    </li>
-                    <li class="image-box">
-                      <div>
-                      <p>"Chevrolet - $21,000 USD"</p>
-                      <img src="https://mimo.app/i/chevrolet.png" width="200" height="150">
-                      </div>
-                    </li>
+
+        <!-- Skills Section -->
+        <div class="mt-10 bg-white shadow-lg rounded-lg p-6">
+            <h3 class="text-2xl font-bold">Skills</h3>
+            <div class="grid grid-cols-2 gap-6 mt-4">
+                <div>
+                    <p>Web Development</p>
+                    <div class="w-full bg-gray-200 rounded-full h-2.5 mt-1">
+                        <div class="bg-blue-600 h-2.5 rounded-full" style="width: 80%;"></div>
+                    </div>
+                </div>
+                <div>
+                    <p>Photography</p>
+                    <div class="w-full bg-gray-200 rounded-full h-2.5 mt-1">
+                        <div class="bg-blue-600 h-2.5 rounded-full" style="width: 60%;"></div>
+                    </div>
+                </div>
+                <div>
+                    <p>Cooking</p>
+                    <div class="w-full bg-gray-200 rounded-full h-2.5 mt-1">
+                        <div class="bg-blue-600 h-2.5 rounded-full" style="width: 70%;"></div>
+                    </div>
+                </div>
+                <div>
+                    <p>Fixing Tickets</p>
+                    <div class="w-full bg-gray-200 rounded-full h-2.5 mt-1">
+                        <div class="bg-blue-600 h-2.5 rounded-full" style="width: 90%;"></div>
+                    </div>
+                </div>
             </div>
         </div>
+
+        <!-- Poem Section -->
+        <div class="mt-10 bg-white shadow-lg rounded-lg p-6">
+            <h4 class="text-xl font-bold">Unique Mechanic's Favorite Poem</h4>
+            <p class="mt-4 text-gray-600">All that is gold does not glitter,<br> Not all those who wander are lost;<br> The old that is strong does not wither,<br> Deep roots are not reached by the frost.<br> <br> From the ashes a fire shall be woken,<br> A light from the shadows shall spring;<br> Renewed shall be blade that was broken,<br> The crownless again shall be king.<br> <br> — J.R.R. Tolkien, The Fellowship of the Ring</p>
+        </div>
+
+        <!-- Links -->
+        <div class="mt-10 flex justify-around">
+            <a href="./hobbies.html" class="text-blue-500">My Hobbies</a>
+            <a href="./contact.html" class="text-blue-500">Contact me</a>
+            <a href="./cookbook.html" class="text-blue-500">Cookbook</a>
+        </div>
+
     </div>
-    
-   
-   
-    <a href="./hobbies.html">My Hobbies</a>
-    <a href="./contact.html">Contact me</a>
-    <a href="./cookbook.html">Cookbook</a>
-   
 
 </body>
-👀
 </html>
