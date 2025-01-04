@@ -11,12 +11,10 @@
 <body class="bg-gray-100 text-gray-800">
 <header class="bg-gray-800 text-white py-4">
     <div class="container mx-auto flex justify-between items-center">
-        <h1 class="text-xl font-bold">🔧⚙️ Unique Mechanic ⛓️🛠️</h1>
-        <nav>
-            <a href="./hobbies" class="text-gray-300 hover:text-white mx-2">Hobbies</a>
-            <a href="./contact" class="text-gray-300 hover:text-white mx-2">Contact</a>
-            <a href="./cookbook" class="text-gray-300 hover:text-white mx-2">Cookbook</a>
-        </nav>
+        <a href="/"><h1 class="text-xl font-bold">🔧⚙️ Unique Mechanic ⛓️🛠️</h1></a>
+        <x-nav-link>
+
+        </x-nav-link>
     </div>
 </header>
 
