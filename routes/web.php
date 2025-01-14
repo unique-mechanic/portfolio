@@ -3,6 +3,7 @@
 use App\Http\Controllers\BlogController;
 use Illuminate\Support\Facades\Route;
 use App\Models\BlogPost;
+use App\Http\Controllers\ProjectController;
 
 Route::get('/', function () {
     return view('index');
@@ -27,4 +28,5 @@ Route::get('/blog', function () {
 
 //Route::get('/blog', [BlogController::class, 'index'])->name('blog.index');
 Route::get('/blog/{slug}', [BlogController::class, 'show'])->name('blog.show');
+Route::get('/projects', [ProjectController::class, 'index'])->name('projects.index');
 
