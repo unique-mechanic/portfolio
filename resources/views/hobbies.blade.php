@@ -11,7 +11,7 @@
             <li>Lift weights and stay fit 🔱</li>
             <li>
                 <strong>
-                    <a href="https://www.w3schools.com" class="text-blue-600 hover:underline">
+                    <a href="https://github.com/unique-mechanic" class="text-blue-600 hover:underline">
                         Code and Create 🖥️
                     </a>
                 </strong>

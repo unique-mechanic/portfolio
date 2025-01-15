@@ -10,21 +10,54 @@
             <li id="email-address" class="text-gray-600">
                 <strong>Email:</strong> ********mechanic@gmail.com
             </li>
+            <li id="phone-number" class="text-gray-600">
+                <strong>Phone:</strong> ************
+            </li>
+            <li id="physical-address" class="text-gray-600">
+                <strong>Address:</strong> Earth
+            </li>
             <button
+                id="toggle-info-btn"
                 class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition"
                 type="button"
-                onclick="document.getElementById('email-address').innerHTML = '<strong>Email:</strong> uniquepromechanic@gmail.com'">
-                Reveal Email
+                onclick="toggleInfo()"
+            >
+                Reveal Info
             </button>
-            <li class="text-gray-600"><strong>Phone:</strong> ************</li>
-            <li class="text-gray-600"><strong>Address:</strong> Earth</li>
         </ul>
-        <button
-            class="bg-blue-500 text-white px-4 py-2 mt-4 rounded hover:bg-blue-600 transition"
-            type="button"
-            onclick="document.querySelector('main').style.display = 'none'">
-            Hide Contact Details
-        </button>
+
+        <script>
+            // JavaScript function to toggle visibility of email, phone, and address
+            function toggleInfo() {
+                const emailElement = document.getElementById('email-address');
+                const phoneElement = document.getElementById('phone-number');
+                const addressElement = document.getElementById('physical-address');
+                const toggleButton = document.getElementById('toggle-info-btn');
+
+                // Obfuscated and revealed values
+                const obfuscatedEmail = '<strong>Email:</strong> ********mechanic@gmail.com';
+                const revealedEmail = '<strong>Email:</strong> uniquepromechanic@gmail.com';
+
+                const obfuscatedPhone = '<strong>Phone:</strong> ************';
+                const revealedPhone = '<strong>Phone:</strong> 123-456-7890';
+
+                const obfuscatedAddress = '<strong>Address:</strong> Earth';
+                const revealedAddress = '<strong>Address:</strong> 123 Main St, Galaxy 42';
+
+                // Toggle between obfuscated and revealed states
+                if (emailElement.innerHTML === obfuscatedEmail) {
+                    emailElement.innerHTML = revealedEmail;
+                    phoneElement.innerHTML = revealedPhone;
+                    addressElement.innerHTML = revealedAddress;
+                    toggleButton.textContent = 'Hide Info';
+                } else {
+                    emailElement.innerHTML = obfuscatedEmail;
+                    phoneElement.innerHTML = obfuscatedPhone;
+                    addressElement.innerHTML = obfuscatedAddress;
+                    toggleButton.textContent = 'Reveal Info';
+                }
+            }
+        </script>
     </section>
 </main>
 

@@ -23,8 +23,8 @@
     </section>
 
     <!-- Quote Section -->
-    <section class="mt-8 p-6 bg-gray-50 rounded-lg">
-        <h3 class="text-lg font-semibold">Favorite Quote:</h3>
+    <section class="mt-8 p-6 bg-white shadow-md rounded-lg">
+        <h3 class="text-xl font-bold">Favorite Quote:</h3>
         <blockquote class="italic mt-2">
             "When life gives me lemons, I'll make chocolate cake and leave the bitches wondering how I did it."
         </blockquote>
@@ -90,7 +90,9 @@
             <li>Project Zardian: Sample Work</li>
             <li>Sample Contact Book: Sample Work</li>
         </ul>
+        <a href="/projects" class="text-blue-500 ml-5 align-middle">View All</a>
     </section>
+
 
     <!-- Favorite Poem -->
     <section class="mt-8 p-6 bg-gray-50 rounded-lg">
