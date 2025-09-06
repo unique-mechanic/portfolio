@@ -37,7 +37,7 @@
             <li>Graduate Diploma in IT - University of Sydney</li>
             <li>Graduate Diploma in Computing - University of Sydney</li>
             <li>B.Tech in Mechanical Engineering - Christ College, Puducherry</li>
-            <li>St. Patrick Matric Higher Secondary School, Puducherry</li>
+            <li>St. Patrick Matriculation Higher Secondary School, Puducherry</li>
         </ul>
     </section>
 
@@ -114,6 +114,6 @@
 <footer class="bg-gray-800 text-white py-4 mt-8 text-center">
     &copy; 2025 Unique Mechanic. All rights reserved.
 </footer>
-</body>
 
+</body>
 </html>
